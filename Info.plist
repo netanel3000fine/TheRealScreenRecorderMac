@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleName</key>
+    <string>TheRealScreenRecorder</string>
+    <key>CFBundleDisplayName</key>
+    <string>TheRealScreenRecorder</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.yourname.screenrecorder</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>13.0</string>
+    <key>LSUIElement</key>
+    <true/>
+
+    <!-- Screen Recording permission (required for ScreenCaptureKit) -->
+    <key>NSScreenCaptureUsageDescription</key>
+    <string>Screen Recorder needs permission to capture your screen.</string>
+
+    <!-- Microphone — NOT used, but SCStream may ask; we explicitly exclude it -->
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Screen Recorder captures system audio only, not your microphone.</string>
+
+    <!-- Saved recordings folder access -->
+    <key>NSDesktopFolderUsageDescription</key>
+    <string>Screen Recorder saves recordings to your Movies folder.</string>
+
+    <!-- Login Item support -->
+    <key>SMPrivilegedExecutables</key>
+    <dict/>
+</dict>
+</plist>
